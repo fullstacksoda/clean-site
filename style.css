@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 0.75rem 1rem;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        font-size: 110%;
+    }
+
+    nav,
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+section {
+    padding: 1rem 1rem;
+    text-align: justify;
+}
+
+main {
+    padding: 1rem 1rem;
+}
+
+main h2 {
+    margin-bottom: 1rem;
+}
+
+main article header {
+    margin-bottom: 1rem;
+}
+
+main article p {
+    text-align: justify;
+}
+
+code {
+    display: block;
+    width: fit-content;
+    background-color: #eee;
+    padding: 1rem 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+}
+
+table {
+    margin: 1rem 0;
+}
+
+thead {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+td {
+    padding: 0.5rem;
+}
